@@ -19,11 +19,11 @@ A simple C++ program to manage personal expenses. This application allows users 
    git clone https://github.com/YOUR_GITHUB_USERNAME/ExpenseExample.git
    cd ExpenseExample
 ```
-2. Compile the program:
+2. Create expenses.txt file in the repository
 ```bash
-   clang++ -std=c++17 ExpenseTracker.cpp -o ExpenseTracker
+   touch expenses.txt
 ```
-3. Run the program
+3. Compile & Run the program
 ```bash
    clang++ -std=c++17 ExpenseTracker.cpp -o ExpenseTracker
 ```
