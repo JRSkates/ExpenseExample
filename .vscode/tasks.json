@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run ExpenseTracker",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "-std=c++17", 
+                "ExpenseTracker.cpp", 
+                "-o", 
+                "ExpenseTracker"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Compile C++ program"
+        },
+        {
+            "label": "Run Program",
+            "type": "shell",
+            "command": "./ExpenseTracker",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated"
+            },
+            "detail": "Run the compiled C++ program"
+        }
+    ]
+}
